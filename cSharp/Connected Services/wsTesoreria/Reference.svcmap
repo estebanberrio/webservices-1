@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5d9bc83b-a6b4-40fa-83bf-c1be11a6d1ba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://190.171.26.128:81/Tesoreria.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Tesoreria.xsd" MetadataType="Schema" ID="bcc737b2-00b6-440a-9117-2391e180e087" SourceId="1" SourceUrl="http://190.171.26.128:81/Tesoreria.svc?xsd=xsd1" />
+    <MetadataFile FileName="Tesoreria1.xsd" MetadataType="Schema" ID="5a23226a-4556-4972-b949-442453d7315e" SourceId="1" SourceUrl="http://190.171.26.128:81/Tesoreria.svc?xsd=xsd0" />
+    <MetadataFile FileName="Tesoreria.wsdl" MetadataType="Wsdl" ID="47497b16-6db0-4d13-a737-e8824ac44436" SourceId="1" SourceUrl="http://190.171.26.128:81/Tesoreria.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

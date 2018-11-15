@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GuardarBancos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Banco" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Moneda" type="xs:short" />
+        <xs:element minOccurs="0" name="CuentaCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nombreCuenta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Disponible" type="xs:long" />
+        <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaSaldo" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="IdCompania" type="xs:int" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarBancosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarBancosResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarAntiguedadCXC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdCompania" type="xs:short" />
+        <xs:element minOccurs="0" name="NombreCliene" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Moneda" type="xs:short" />
+        <xs:element minOccurs="0" name="CuentaCXC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Diascredito" type="xs:short" />
+        <xs:element minOccurs="0" name="FechaDocumento" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaVencimiento" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="MontoOriginal" type="xs:long" />
+        <xs:element minOccurs="0" name="Sinvencer" type="xs:long" />
+        <xs:element minOccurs="0" name="De1A30" type="xs:long" />
+        <xs:element minOccurs="0" name="De31A60" type="xs:long" />
+        <xs:element minOccurs="0" name="De61A90" type="xs:long" />
+        <xs:element minOccurs="0" name="Mas90" type="xs:long" />
+        <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarAntiguedadCXCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarAntiguedadCXCResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarInventario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdCompania" type="xs:short" />
+        <xs:element minOccurs="0" name="sector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Familia" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="articulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="articulodescripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="boleta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Permanencia" type="xs:short" />
+        <xs:element minOccurs="0" name="Saldo" type="xs:long" />
+        <xs:element minOccurs="0" name="ventasAnuales" type="xs:long" />
+        <xs:element minOccurs="0" name="Peso" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Costo" type="xs:decimal" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarInventarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarInventarioResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarImpuesto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdCompania" type="xs:short" />
+        <xs:element minOccurs="0" name="CuentaImpuesto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IdClasificacion" type="xs:short" />
+        <xs:element minOccurs="0" name="Monto" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarImpuestoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarImpuestoResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarTipoCambio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TipoCambioCompra" type="xs:decimal" />
+        <xs:element minOccurs="0" name="TipoCambioVenta" type="xs:decimal" />
+        <xs:element minOccurs="0" name="Moneda" type="xs:short" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarTipoCambioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarTipoCambioResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Init">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Contrasena" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IdCompania" type="xs:short" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InitResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="TOKEN" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
